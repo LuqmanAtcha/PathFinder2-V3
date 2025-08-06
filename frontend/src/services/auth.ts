@@ -2,7 +2,7 @@ import axios from "axios";
 import { LoginCredentials, LoginResponse, RegisterCredentials, RegisterResponse } from "../types/auth.js";
 
 const API = axios.create({
-  baseURL: "http://localhost:5004/api/auth",
+  baseURL: "https://deployed-gameshow.onrender.com/api/auth",
   headers: {
     "Content-Type": "application/json",
   },
