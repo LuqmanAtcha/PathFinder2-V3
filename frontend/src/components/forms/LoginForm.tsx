@@ -186,14 +186,8 @@ const LoginForm: React.FC = () => {
 
             <div className="flex items-center justify-between">
               <label className="flex items-center cursor-pointer">
-                <input
-                  type="checkbox"
-                  name="rememberMe"
-                  checked={formData.rememberMe}
-                  onChange={handleInputChange}
-                  className="w-4 h-4 text-red-500 bg-gray-100 border-gray-300 rounded focus:ring-red-500 focus:ring-2"
-                />
-                <span className={`ml-2 text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Remember me</span>
+                
+             
               </label>
             </div>
 
@@ -216,15 +210,7 @@ const LoginForm: React.FC = () => {
             </button>
           </div>
 
-          {/* Footer */}
-          <div className="mt-6 text-center">
-            <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              New to Sanskrit Shabd Samvad?{' '}
-              <Link to={ROUTES.REGISTER} className="text-red-600 hover:text-red-500 font-medium transition-colors">
-                Create an account
-              </Link>
-            </p>
-          </div>
+          
 
 
         </div>
