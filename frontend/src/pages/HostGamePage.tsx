@@ -82,7 +82,7 @@ const HostGamePage: React.FC = () => {
       socketRef.current.disconnect();
     }
 
-    const socket = io("http://localhost:5004", {
+    const socket = io("https://deployed-gameshow.onrender.com", {
       forceNew: true,
       reconnection: true,
       reconnectionAttempts: 5,
